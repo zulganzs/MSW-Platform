@@ -2,7 +2,7 @@
 
 Platform pelaporan masalah sampah kota (Municipal Solid Waste) yang menghubungkan warga, petugas triage, dan crew lapangan dalam satu alur: **lapor → triage → dispatch → resolve → notifikasi email**.
 
-Dibangun dengan **Laravel 12 (API-only)** untuk backend dan **Expo React Native** untuk frontend yang jalan di **web, Android, dan iOS** dari satu codebase.
+Dibangun dengan **Laravel 12** untuk backend, frontend versi WEB dan **Expo React Native** untuk frontend yang jalan di **Android, dan iOS** dari satu codebase.
 
 Selaras dengan **SDG 11 — Sustainable Cities and Communities**, Target 11.6: pengelolaan sampah kota.
 
