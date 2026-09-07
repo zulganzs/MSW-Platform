@@ -19,8 +19,6 @@ Selaras dengan **SDG 11 — Sustainable Cities and Communities**, Target 11.6: p
 - [Cara Menjalankan](#cara-menjalankan)
 - [Testing](#testing)
 - [Struktur Proyek](#struktur-proyek)
-- [Dokumentasi](#dokumentasi)
-
 ---
 
 ## Fitur Utama
@@ -366,17 +364,6 @@ StudyCaseEISD/
 ├── a-web-based-platform-for-municipal-solid-waste-management.md  # Case study
 └── README.md                        # This file
 ```
-
----
-
-## Dokumentasi
-
-| Dokumen | Isi |
-|---|---|
-| [`docs/UML-DIAGRAMS.md`](docs/UML-DIAGRAMS.md) | Use Case, Class, Activity, dan Sequence diagram (Mermaid) |
-| [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) | Skrip video presentasi (Bahasa Indonesia) |
-| [`PROJECT-DESIGN.md`](PROJECT-DESIGN.md) | Spesifikasi desain UI untuk web dan mobile |
-| [`a-web-based-platform-for-municipal-solid-waste-management.md`](a-web-based-platform-for-municipal-solid-waste-management.md) | Studi kasus + data dictionary + blueprint Laravel |
 
 ---
 
