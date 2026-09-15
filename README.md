@@ -356,9 +356,6 @@ StudyCaseEISD/
 │   │   └── services/                 # api.ts (Axios), auth.ts
 │   └── app.json
 │
-├── docs/
-│   ├── UML-DIAGRAMS.md              # Use Case, Class, Activity, Sequence diagrams
-│   └── VIDEO-SCRIPT.md              # Skrip video presentasi
 │
 └── README.md                        # This file
 ```
