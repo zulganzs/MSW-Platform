@@ -320,7 +320,7 @@ npx expo start --web
 
 ```
 StudyCaseEISD/
-├── backend/                          # Laravel 12 API
+├── backend/                          
 │   ├── app/
 │   │   ├── Http/
 │   │   │   ├── Controllers/           # AuthController, ReportController, dll
