@@ -360,8 +360,6 @@ StudyCaseEISD/
 │   ├── UML-DIAGRAMS.md              # Use Case, Class, Activity, Sequence diagrams
 │   └── VIDEO-SCRIPT.md              # Skrip video presentasi
 │
-├── PROJECT-DESIGN.md                # UI design specification
-├── a-web-based-platform-for-municipal-solid-waste-management.md  # Case study
 └── README.md                        # This file
 ```
 
