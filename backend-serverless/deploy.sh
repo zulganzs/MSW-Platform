@@ -369,7 +369,7 @@ if [ -n "$EXISTING_URL" ] && [ "$EXISTING_URL" != "None" ]; then
     --auth-type NONE \
     --cors '{
       "AllowOrigins": ["*"],
-      "AllowMethods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+      "AllowMethods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
       "AllowHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "AllowCredentials": false,
       "MaxAge": 86400
@@ -387,7 +387,7 @@ else
     --auth-type NONE \
     --cors '{
       "AllowOrigins": ["*"],
-      "AllowMethods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+      "AllowMethods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
       "AllowHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "AllowCredentials": false,
       "MaxAge": 86400
