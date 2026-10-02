@@ -45,7 +45,7 @@ FUNCTION_NAME="msw-api"
 ROLE_NAME="msw-lambda-role"
 POLICY_NAME="msw-lambda-policy"
 RUNTIME="nodejs20.x"
-HANDLER="src/index.handler"
+HANDLER="index.handler"
 TIMEOUT=30
 MEMORY_SIZE=256
 BUDGET_NAME="msw-zero-cost-budget"
@@ -269,7 +269,9 @@ rm -f "$DEPLOY_ZIP"
 
 # Zip from the project root, including only what Lambda needs
 (cd "$SCRIPT_DIR" && zip -q -r "$DEPLOY_ZIP" \
-  src/ \
+  index.mjs \
+  handlers/ \
+  lib/ \
   node_modules/ \
   package.json \
   -x "*.sh" \
@@ -485,14 +487,7 @@ else
       }
     },
     "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
-    "Compress": true,
-    "ForwardedValues": {
-      "QueryString": false,
-      "Cookies": { "Forward": "none" }
-    },
-    "MinTTL": 0,
-    "DefaultTTL": 86400,
-    "MaxTTL": 31536000
+    "Compress": true
   },
   "Origins": {
     "Quantity": 1,
