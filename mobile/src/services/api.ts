@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken } from './token';
 
 export const api = axios.create({
-  baseURL: process.env.EXPO_PUBLIC_API_URL,
+  baseURL: process.env.EXPO_PUBLIC_API_URL || 'https://tjb406z56k.execute-api.ap-southeast-1.amazonaws.com/api',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
