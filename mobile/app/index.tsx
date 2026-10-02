@@ -1,23 +1,8 @@
 import { Redirect } from 'expo-router';
-import { Platform, View, ActivityIndicator } from 'react-native';
+import { View, ActivityIndicator } from 'react-native';
 import { useAuth } from '../src/hooks/useAuth';
 
-const DESKTOP_UA = /Mobile|Android|iPhone|iPad|iPod/i;
-
 export default function Index() {
-  // Web platform: send desktop browsers to the Laravel Blade app.
-  // Mobile browsers stay on Expo web; native apps are unaffected.
-  if (Platform.OS === 'web') {
-    const ua = typeof navigator !== 'undefined' ? navigator.userAgent : '';
-    if (!DESKTOP_UA.test(ua)) {
-      const url = process.env.EXPO_PUBLIC_WEB_APP_URL;
-      if (url) {
-        window.location.href = url;
-        return null;
-      }
-    }
-  }
-
   const { token, user, isLoading } = useAuth();
 
   if (isLoading) {

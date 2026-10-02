@@ -4,12 +4,8 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { api } from '../../../../src/services/api';
 import { StatusBadge, ReportStatus } from '../../../../src/components/StatusBadge';
 
-// ponytail: backend stores relative file_path; needs absolute URL until API emits full URLs (S3/CDN upgrade path)
-const WEB_APP_URL = process.env.EXPO_PUBLIC_WEB_APP_URL ?? '';
-
 function toImageUrl(file_path: string): string {
-  if (file_path.startsWith('http')) return file_path;
-  return `${WEB_APP_URL}/storage/${file_path}`;
+  return file_path;
 }
 
 interface Attachment {

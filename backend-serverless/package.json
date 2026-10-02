@@ -1,0 +1,20 @@
+{
+  "name": "msw-platform-backend-serverless",
+  "version": "1.0.0",
+  "description": "MSW-Platform serverless backend on AWS Lambda",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "busboy": "^1.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
